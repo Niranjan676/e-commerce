@@ -1,10 +1,13 @@
 import React from 'react'
-import Navbar from './components/Navbar'
+import { Route, Routes } from 'react-router-dom'
+import Products from './components/Products'
 
 function App() {
   return (
     <div className='bg-gray-200 min-h-screen'>
-      <Navbar />
+      <Routes>
+        <Route path='/' element={<Products />} />
+      </Routes>
     </div>
   )
 }
